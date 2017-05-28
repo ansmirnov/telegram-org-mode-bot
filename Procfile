@@ -1,1 +1,1 @@
-web: gunicorn telegram-orgmode-bot:app
+web: gunicorn printenv:app

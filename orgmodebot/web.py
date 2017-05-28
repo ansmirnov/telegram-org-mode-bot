@@ -1,6 +1,6 @@
 import os
 from telegram.ext import Updater
-from orgmodebot import bot
+import bot
 
 TOKEN = os.environ.get('BOT_TOKEN', '')
 PORT = int(os.environ.get('PORT', '5000'))

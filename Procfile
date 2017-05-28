@@ -1,1 +1,1 @@
-web: gunicorn printenv:app
+web: python orgmodebot/web.py

@@ -1,0 +1,33 @@
+* About
+
+This is simple bot for using Telegram as "Inbox" in GTD.
+
+* How to install
+
+#+BEGIN_SRC sh
+git clone https://github.com/ansmirnov/telegram-org-mode-bot.git && cd telegram-org-mode-bot && pip install .
+#+END_SRC
+
+* How to use
+
+You need to set following environment variables:
+
+|-------------+-----------------------+------------------------------------------------------|
+| Varibale    | Default value         | Description                                          |
+|-------------+-----------------------+------------------------------------------------------|
+| BOT_TOKEN   | None                  | Bot token                                            |
+| WORKING_DIR | ~/                    | Working dir for saving attachments                   |
+| INBOX_DIR   | WORKING_DIR/inbox.org | File for placing inbox items                         |
+| CHAT_ID     | None                  | Chat id of user, what allowed to send message to bot |
+|-------------+-----------------------+------------------------------------------------------|
+  
+For example:
+
+#+BEGIN_SRC sh
+BOT_TOKEN=xxxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx WORKING_DIR=~/as/ CHAT_ID=?????? tg_orgmode_bot
+#+END_SRC
+
+
+* Registering your own bot
+
+You need to write [[https://t.me/BotFather][@BotFather]] bot.
